@@ -37,5 +37,23 @@ Assim que fazer o login será adicionado na barra de navegação um botão para 
 https://user-images.githubusercontent.com/17555669/143782870-e4ed0c35-e248-42b9-92dc-a4609fd9ae13.mp4
 
 ### Nova Tarefa
+Existe uma validação no formulário para que seja inserido o título e o conteudo, caso algum desses estejam faltando um alerta lembrará o usuario a preencher esses dados, assim que o botão + for pressionado, o valor será atribuido automaticamente na coluna Todo.
 
+https://user-images.githubusercontent.com/17555669/143785723-fcf19839-0468-45f7-b6e0-e79cd9da623c.mp4
+
+### Modos
+#### Modo Resumido
+Card com detalhes resumido, para entrar no modo de edição, clicar em cima do titulo, pressionando novamente o titulo entra novamente no modo resumido.
+
+https://user-images.githubusercontent.com/17555669/143785992-43ae2726-6c9c-41e2-83be-cfc209770a4e.mp4
+
+#### Modo Detalhado
+Card no modo detalahdo onde o usuário pode entrar no modo edição clicando em cima do icone da caneta, pode excluir ou mover para outra coluna.
+
+https://user-images.githubusercontent.com/17555669/143786849-31aad9f3-057f-47ca-ba1e-1195091957a3.mp4
+
+#### Modo Edição
+Card no modo o usuario pode editar o título e/ou o conteudo, assim como cancelar uma edição.
+
+https://user-images.githubusercontent.com/17555669/143787015-a33e6080-a149-4559-93f8-850ba4b121c1.mp4
 
