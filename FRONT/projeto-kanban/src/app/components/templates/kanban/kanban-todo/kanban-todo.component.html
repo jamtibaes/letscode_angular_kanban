@@ -1,0 +1,10 @@
+<div class="card my-2">
+  <div class="card-header text-center">To Do</div>
+</div>
+<app-todo
+  *ngFor="let item of lista"
+  [item]="item"
+  (onRightKanban)="rightKanban(item)"
+  (onUpdate)="updateKanban(item)"
+  (onDeleteKanban)="deleteKanban(item)">
+</app-todo>

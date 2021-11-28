@@ -1,0 +1,27 @@
+.card-title-custom {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.login-custom {
+  margin-top: 3rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-custom {
+  width: 30rem;
+}

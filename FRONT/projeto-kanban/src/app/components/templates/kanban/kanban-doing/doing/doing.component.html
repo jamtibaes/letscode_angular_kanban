@@ -1,0 +1,33 @@
+<div *ngIf="item.lista === component" class="card my-1">
+  <div class="card-body">
+    <div class="card-title-custom" *ngIf="!isEditable;else formTitle" >
+      <h5 class="card-title "  (click)="collapse()">{{ item.titulo }}</h5>
+      <fa-icon
+      *ngIf="isCollapsed"
+      [icon]="faPen"
+      (click)="editItem()"
+      ></fa-icon>
+    </div>
+    <ng-template #formTitle>
+      <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]='item.titulo'>
+    </ng-template>
+
+    <p *ngIf="!isEditable;else formContent" class="card-text">{{ item.conteudo }}</p>
+    <ng-template #formContent>
+      <textarea type="text" class="form-control" id="conteudo" name="conteudo" [(ngModel)]='item.conteudo'></textarea>
+    </ng-template>
+
+    <div *ngIf="!isEditable && isCollapsed" class="icons">
+      <fa-icon class="icon btn btn-light" [icon]="faAngleLeft" (click)="onLeftArrow(item)"></fa-icon>
+      <fa-icon class="icon btn btn-light" [icon]="faTrash" (click)="onDelete(item)" ></fa-icon>
+      <fa-icon class="icon btn btn-light" [icon]="faAngleRight" (click)="onRightArrow(item)" ></fa-icon>
+    </div>
+    <div *ngIf="isEditable && isCollapsed" class="icons">
+      <fa-icon class="icon btn btn-light" [icon]="faBan" (click)="onCancel()"  ></fa-icon>
+      <fa-icon class="icon btn btn-light" [icon]="faSave" (click)="onUpdateAll()" ></fa-icon>
+    </div>
+  </div>
+</div>
+
+
+

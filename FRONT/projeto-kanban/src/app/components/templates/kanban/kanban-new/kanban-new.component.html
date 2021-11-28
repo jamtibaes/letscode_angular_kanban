@@ -1,0 +1,20 @@
+<div class="card my-2">
+  <div class="card-header text-center">New</div>
+</div>
+
+<form (ngSubmit)="onSubmit()" >
+  <div>
+    <label for="titulo" class="form-label">Titulo</label>
+    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo">
+  </div>
+  <div>
+    <label for="conteudo" class="form-label">Conteúdo</label>
+    <textarea class="form-control" id="conteudo" rows="3" name="conteudo" [(ngModel)]="conteudo"></textarea>
+  </div>
+  <div class="custom" >
+    <button  type="submit" class="btn btn-light">
+      <fa-icon  class="icon" [icon]="faPlus"></fa-icon>
+    </button>
+  </div>
+</form>
+
