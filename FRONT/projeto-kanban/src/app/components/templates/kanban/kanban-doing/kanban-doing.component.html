@@ -1,0 +1,11 @@
+<div class="card my-2">
+  <div class="card-header text-center">Doing</div>
+</div>
+<app-doing
+  *ngFor="let item of lista"
+  [item]="item"
+  (onRightKanban)="rightKanban(item)"
+  (onLeftKanban)="leftKanban(item)"
+  (onUpdate)="updateKanban(item)"
+  (onDeleteKanban)="deleteKanban(item)">
+</app-doing>
