@@ -1,0 +1,28 @@
+<div class="login-custom" >
+  <div class="container container-custom">
+    <div class="card">
+      <h3 class="card-header">LOGIN</h3>
+      <form class="card-body" (ngSubmit)="login()" #loginForm="ngForm">
+        <div class="mb-3">
+          <label for="usuario" class="form-label">Nome</label>
+          <input type="text" class="form-control" name="usuario" id="usuario"
+            #campoUsuario="ngModel"
+            required
+            [(ngModel)]="usuario">
+          <app-mensagem *ngIf="campoUsuario.invalid  && campoUsuario.touched" mensagem="Usuário Obrigatório"></app-mensagem>
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" name="senha" id="senha"
+            #campoSenha="ngModel"
+            required
+            [(ngModel)]="senha">
+            <app-mensagem *ngIf="campoSenha.invalid && campoSenha.touched" mensagem="Senha Obrigatória"></app-mensagem>
+        </div>
+        <button type="submit" class="btn btn-dark" [disabled]="loginForm.invalid">Enviar</button>
+        <app-mensagem *ngIf="semCadastro" mensagem="Usuário não cadastrado"></app-mensagem>
+      </form>
+      <div class="card-footer text-muted">Desenvolvido por José Tibães</div>
+    </div>
+  </div>
+</div>

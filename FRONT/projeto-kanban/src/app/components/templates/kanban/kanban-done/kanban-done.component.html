@@ -1,0 +1,10 @@
+<div class="card my-2">
+  <div class="card-header text-center">Done</div>
+</div>
+<app-done
+  *ngFor="let item of lista"
+  [item]="item"
+  (onLeftKanban)="leftKanban(item)"
+  (onUpdate)="updateKanban(item)"
+  (onDeleteKanban)="deleteKanban(item)">
+</app-done>

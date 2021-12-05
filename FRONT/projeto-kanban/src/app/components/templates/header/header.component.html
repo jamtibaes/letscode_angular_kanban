@@ -1,0 +1,17 @@
+<header >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
+    <span class="navbar-brand mb-0 h1">Kanban <fa-icon [icon]="faAngular"></fa-icon></span>
+    <div class="mr-sm-2">
+      <ul class="navbar-nav d-flex flex-row">
+        <!-- <li class="nav-item active px-2">
+          <a class="nav-link" [routerLink]="['kanban']">Home</a>
+        </li> -->
+        <li class="nav-item px-2">
+          <div *ngIf="hasLogado" class="nav-link" style="cursor: pointer;" (click)="Deslogar()">Logout</div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+</header>
